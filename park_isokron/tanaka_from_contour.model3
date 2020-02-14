@@ -1,0 +1,137 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="native:splitlinesbylength_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:splitlinesbylength" name="alg_id" type="QString"/>
+      <Option value="Split lines by maximum length" name="component_description" type="QString"/>
+      <Option value="358" name="component_pos_x" type="double"/>
+      <Option value="244" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="native:splitlinesbylength_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="contour" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="LENGTH" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="0.0001" name="static_value" type="double"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:advancedpythonfieldcalculator_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:advancedpythonfieldcalculator" name="alg_id" type="QString"/>
+      <Option value="Advanced Python field calculator" name="component_description" type="QString"/>
+      <Option value="511" name="component_pos_x" type="double"/>
+      <Option value="347" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="qgis:advancedpythonfieldcalculator_1" name="id" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="tanaka contour" type="Map">
+          <Option value="qgis:advancedpythonfieldcalculator_1" name="child_id" type="QString"/>
+          <Option value="tanaka contour" name="component_description" type="QString"/>
+          <Option value="677" name="component_pos_x" type="double"/>
+          <Option value="425" name="component_pos_y" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option value="false" name="mandatory" type="bool"/>
+          <Option value="tanaka contour" name="name" type="QString"/>
+          <Option value="OUTPUT" name="output_name" type="QString"/>
+        </Option>
+      </Option>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD_LENGTH" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="3" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_NAME" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="azimuth" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_PRECISION" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="0" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_TYPE" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="2" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FORMULA" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="p1 = $geom.asPolyline()[0]&#xa;p2 = $geom.asPolyline()[-1]&#xa;a = p1.azimuth(p2)&#xa;if a &lt; 0:&#xa;    a += 360&#xa;value = a" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="GLOBAL" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="native:splitlinesbylength_1" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option name="modelVariables"/>
+  <Option value="parkopland" name="model_group" type="QString"/>
+  <Option value="tanaka fra contour" name="model_name" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="contour" type="Map">
+      <Option name="data_types" type="List">
+        <Option value="5" type="int"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option value="Contour" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="contour" name="name" type="QString"/>
+      <Option value="vector" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="qgis:advancedpythonfieldcalculator_1:tanaka contour" type="Map">
+      <Option value="true" name="create_by_default" type="bool"/>
+      <Option value="-1" name="data_type" type="int"/>
+      <Option name="default" type="invalid"/>
+      <Option value="tanaka contour" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="qgis:advancedpythonfieldcalculator_1:tanaka contour" name="name" type="QString"/>
+      <Option value="sink" name="parameter_type" type="QString"/>
+      <Option value="true" name="supports_non_file_outputs" type="bool"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="contour" type="Map">
+      <Option value="contour" name="component_description" type="QString"/>
+      <Option value="218" name="component_pos_x" type="double"/>
+      <Option value="140" name="component_pos_y" type="double"/>
+      <Option value="contour" name="name" type="QString"/>
+    </Option>
+  </Option>
+</Option>
