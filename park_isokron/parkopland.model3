@@ -2,196 +2,235 @@
 <Option type="Map">
   <Option name="children" type="Map">
     <Option name="gdal:contour_1" type="Map">
-      <Option name="active" type="bool" value="true"/>
+      <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" type="QString" value="gdal:contour"/>
-      <Option name="component_description" type="QString" value="Contour"/>
-      <Option name="component_pos_x" type="double" value="148.9627620221948"/>
-      <Option name="component_pos_y" type="double" value="201.78643649815044"/>
+      <Option name="alg_id" value="gdal:contour" type="QString"/>
+      <Option name="component_description" value="Contour" type="QString"/>
+      <Option name="component_pos_x" value="148.9627620221948" type="double"/>
+      <Option name="component_pos_y" value="201.78643649815044" type="double"/>
       <Option name="dependencies"/>
-      <Option name="id" type="QString" value="gdal:contour_1"/>
+      <Option name="id" value="gdal:contour_1" type="QString"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" type="bool" value="true"/>
-      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
       <Option name="params" type="Map">
         <Option name="BAND" type="List">
           <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="QString" value="1"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="1" type="QString"/>
           </Option>
         </Option>
         <Option name="CREATE_3D" type="List">
           <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="bool" value="false"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
           </Option>
         </Option>
         <Option name="EXTRA" type="List">
           <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="QString" value=""/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="" type="QString"/>
           </Option>
         </Option>
         <Option name="FIELD_NAME" type="List">
           <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="QString" value="tid"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="tid" type="QString"/>
           </Option>
         </Option>
         <Option name="IGNORE_NODATA" type="List">
           <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="bool" value="false"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
           </Option>
         </Option>
         <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option name="child_id" type="QString" value="gdal:gridinversedistancenearestneighbor_1"/>
-            <Option name="output_name" type="QString" value="OUTPUT"/>
-            <Option name="source" type="int" value="1"/>
+            <Option name="child_id" value="gdal:gridinversedistancenearestneighbor_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
           </Option>
         </Option>
         <Option name="INTERVAL" type="List">
           <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="double" value="1"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="1" type="double"/>
           </Option>
         </Option>
         <Option name="NODATA" type="List">
           <Option type="Map">
-            <Option name="source" type="int" value="2"/>
+            <Option name="source" value="2" type="int"/>
             <Option name="static_value" type="invalid"/>
           </Option>
         </Option>
         <Option name="OFFSET" type="List">
           <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="double" value="0"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="double"/>
           </Option>
         </Option>
       </Option>
     </Option>
     <Option name="gdal:gridinversedistancenearestneighbor_1" type="Map">
-      <Option name="active" type="bool" value="true"/>
+      <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" type="QString" value="gdal:gridinversedistancenearestneighbor"/>
-      <Option name="component_description" type="QString" value="Grid (IDW with nearest neighbor searching)"/>
-      <Option name="component_pos_x" type="double" value="146.931196054254"/>
-      <Option name="component_pos_y" type="double" value="119.19975339087549"/>
+      <Option name="alg_id" value="gdal:gridinversedistancenearestneighbor" type="QString"/>
+      <Option name="component_description" value="Grid (IDW with nearest neighbor searching)" type="QString"/>
+      <Option name="component_pos_x" value="146.931196054254" type="double"/>
+      <Option name="component_pos_y" value="119.19975339087549" type="double"/>
       <Option name="dependencies"/>
-      <Option name="id" type="QString" value="gdal:gridinversedistancenearestneighbor_1"/>
+      <Option name="id" value="gdal:gridinversedistancenearestneighbor_1" type="QString"/>
       <Option name="outputs" type="Map">
         <Option name="rejsetid" type="Map">
-          <Option name="child_id" type="QString" value="gdal:gridinversedistancenearestneighbor_1"/>
-          <Option name="component_description" type="QString" value="rejsetid"/>
-          <Option name="component_pos_x" type="double" value="444.1267570900123"/>
-          <Option name="component_pos_y" type="double" value="147.29617755856967"/>
+          <Option name="child_id" value="gdal:gridinversedistancenearestneighbor_1" type="QString"/>
+          <Option name="component_description" value="rejsetid" type="QString"/>
+          <Option name="component_pos_x" value="444.1267570900123" type="double"/>
+          <Option name="component_pos_y" value="147.29617755856967" type="double"/>
           <Option name="default_value" type="invalid"/>
-          <Option name="mandatory" type="bool" value="false"/>
-          <Option name="name" type="QString" value="rejsetid"/>
-          <Option name="output_name" type="QString" value="OUTPUT"/>
+          <Option name="mandatory" value="false" type="bool"/>
+          <Option name="name" value="rejsetid" type="QString"/>
+          <Option name="output_name" value="OUTPUT" type="QString"/>
         </Option>
       </Option>
-      <Option name="outputs_collapsed" type="bool" value="true"/>
-      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
       <Option name="params" type="Map">
         <Option name="DATA_TYPE" type="List">
           <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="int" value="5"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="5" type="int"/>
           </Option>
         </Option>
         <Option name="EXTRA" type="List">
           <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="QString" value=""/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="" type="QString"/>
           </Option>
         </Option>
         <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option name="parameter_name" type="QString" value="nodepgrouting"/>
-            <Option name="source" type="int" value="0"/>
+            <Option name="parameter_name" value="nodepgrouting" type="QString"/>
+            <Option name="source" value="0" type="int"/>
           </Option>
         </Option>
         <Option name="MAX_POINTS" type="List">
           <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="int" value="5"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="5" type="int"/>
           </Option>
         </Option>
         <Option name="MIN_POINTS" type="List">
           <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="int" value="0"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="int"/>
           </Option>
         </Option>
         <Option name="NODATA" type="List">
           <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="double" value="0"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="double"/>
           </Option>
         </Option>
         <Option name="OPTIONS" type="List">
           <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="QString" value=""/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="" type="QString"/>
           </Option>
         </Option>
         <Option name="POWER" type="List">
           <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="double" value="2"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="2" type="double"/>
           </Option>
         </Option>
         <Option name="RADIUS" type="List">
           <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="double" value="1"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="1" type="double"/>
           </Option>
         </Option>
         <Option name="SMOOTHING" type="List">
           <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="double" value="0"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="double"/>
           </Option>
         </Option>
         <Option name="Z_FIELD" type="List">
           <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="QString" value="tid_min"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="tid_min" type="QString"/>
           </Option>
         </Option>
       </Option>
     </Option>
     <Option name="model:tanaka fra contour_1" type="Map">
-      <Option name="active" type="bool" value="true"/>
+      <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" type="QString" value="model:tanaka fra contour"/>
-      <Option name="component_description" type="QString" value="tanaka fra contour"/>
-      <Option name="component_pos_x" type="double" value="148.96276202219485"/>
-      <Option name="component_pos_y" type="double" value="290.53020961775593"/>
+      <Option name="alg_id" value="model:tanaka fra contour" type="QString"/>
+      <Option name="component_description" value="tanaka fra contour" type="QString"/>
+      <Option name="component_pos_x" value="148.96276202219485" type="double"/>
+      <Option name="component_pos_y" value="290.53020961775593" type="double"/>
       <Option name="dependencies"/>
-      <Option name="id" type="QString" value="model:tanaka fra contour_1"/>
+      <Option name="id" value="model:tanaka fra contour_1" type="QString"/>
       <Option name="outputs" type="Map">
         <Option name="tanaka contour" type="Map">
-          <Option name="child_id" type="QString" value="model:tanaka fra contour_1"/>
-          <Option name="component_description" type="QString" value="tanaka contour"/>
-          <Option name="component_pos_x" type="double" value="434.5371146732427"/>
-          <Option name="component_pos_y" type="double" value="317.570160295931"/>
+          <Option name="child_id" value="model:tanaka fra contour_1" type="QString"/>
+          <Option name="component_description" value="tanaka contour" type="QString"/>
+          <Option name="component_pos_x" value="434.5371146732427" type="double"/>
+          <Option name="component_pos_y" value="317.570160295931" type="double"/>
           <Option name="default_value" type="invalid"/>
-          <Option name="mandatory" type="bool" value="false"/>
-          <Option name="name" type="QString" value="tanaka contour"/>
-          <Option name="output_name" type="QString" value="qgis:advancedpythonfieldcalculator_1:tanaka contour"/>
+          <Option name="mandatory" value="false" type="bool"/>
+          <Option name="name" value="tanaka contour" type="QString"/>
+          <Option name="output_name" value="qgis:advancedpythonfieldcalculator_1:tanaka contour" type="QString"/>
         </Option>
       </Option>
-      <Option name="outputs_collapsed" type="bool" value="true"/>
-      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
       <Option name="params" type="Map">
         <Option name="contour" type="List">
           <Option type="Map">
-            <Option name="child_id" type="QString" value="gdal:contour_1"/>
-            <Option name="output_name" type="QString" value="OUTPUT"/>
-            <Option name="source" type="int" value="1"/>
+            <Option name="child_id" value="gdal:contour_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:clip_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:clip" type="QString"/>
+      <Option name="component_description" value="Clip" type="QString"/>
+      <Option name="component_pos_x" value="574" type="double"/>
+      <Option name="component_pos_y" value="397" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:clip_1" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="tanaka_clip" type="Map">
+          <Option name="child_id" value="native:clip_1" type="QString"/>
+          <Option name="component_description" value="tanaka_clip" type="QString"/>
+          <Option name="component_pos_x" value="776" type="double"/>
+          <Option name="component_pos_y" value="457" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" value="false" type="bool"/>
+          <Option name="name" value="tanaka_clip" type="QString"/>
+          <Option name="output_name" value="OUTPUT" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="model:tanaka fra contour_1" type="QString"/>
+            <Option name="output_name" value="qgis:advancedpythonfieldcalculator_1:tanaka contour" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="OVERLAY" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="kommunegr" type="QString"/>
+            <Option name="source" value="0" type="int"/>
           </Option>
         </Option>
       </Option>
@@ -199,48 +238,76 @@
   </Option>
   <Option name="help"/>
   <Option name="modelVariables"/>
-  <Option name="model_group" type="QString" value="parkopland"/>
-  <Option name="model_name" type="QString" value="parkopland raster og tanaka"/>
+  <Option name="model_group" value="parkopland" type="QString"/>
+  <Option name="model_name" value="parkopland raster og tanaka" type="QString"/>
   <Option name="parameterDefinitions" type="Map">
     <Option name="gdal:gridinversedistancenearestneighbor_1:rejsetid" type="Map">
-      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="create_by_default" value="true" type="bool"/>
       <Option name="default" type="invalid"/>
-      <Option name="description" type="QString" value="rejsetid"/>
-      <Option name="flags" type="int" value="0"/>
+      <Option name="description" value="rejsetid" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
       <Option name="metadata"/>
-      <Option name="name" type="QString" value="gdal:gridinversedistancenearestneighbor_1:rejsetid"/>
-      <Option name="parameter_type" type="QString" value="rasterDestination"/>
-      <Option name="supports_non_file_outputs" type="bool" value="false"/>
+      <Option name="name" value="gdal:gridinversedistancenearestneighbor_1:rejsetid" type="QString"/>
+      <Option name="parameter_type" value="rasterDestination" type="QString"/>
+      <Option name="supports_non_file_outputs" value="false" type="bool"/>
+    </Option>
+    <Option name="kommunegr" type="Map">
+      <Option name="data_types" type="List">
+        <Option value="2" type="int"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="description" value="kommunegr" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="metadata"/>
+      <Option name="name" value="kommunegr" type="QString"/>
+      <Option name="parameter_type" value="vector" type="QString"/>
     </Option>
     <Option name="model:tanaka fra contour_1:tanaka contour" type="Map">
-      <Option name="create_by_default" type="bool" value="true"/>
-      <Option name="data_type" type="int" value="-1"/>
+      <Option name="create_by_default" value="true" type="bool"/>
+      <Option name="data_type" value="-1" type="int"/>
       <Option name="default" type="invalid"/>
-      <Option name="description" type="QString" value="tanaka contour"/>
-      <Option name="flags" type="int" value="0"/>
+      <Option name="description" value="tanaka contour" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
       <Option name="metadata"/>
-      <Option name="name" type="QString" value="model:tanaka fra contour_1:tanaka contour"/>
-      <Option name="parameter_type" type="QString" value="sink"/>
-      <Option name="supports_non_file_outputs" type="bool" value="true"/>
+      <Option name="name" value="model:tanaka fra contour_1:tanaka contour" type="QString"/>
+      <Option name="parameter_type" value="sink" type="QString"/>
+      <Option name="supports_non_file_outputs" value="true" type="bool"/>
+    </Option>
+    <Option name="native:clip_1:tanaka_clip" type="Map">
+      <Option name="create_by_default" value="true" type="bool"/>
+      <Option name="data_type" value="-1" type="int"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" value="tanaka_clip" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="metadata"/>
+      <Option name="name" value="native:clip_1:tanaka_clip" type="QString"/>
+      <Option name="parameter_type" value="sink" type="QString"/>
+      <Option name="supports_non_file_outputs" value="true" type="bool"/>
     </Option>
     <Option name="nodepgrouting" type="Map">
       <Option name="data_types" type="List">
-        <Option type="int" value="0"/>
+        <Option value="0" type="int"/>
       </Option>
       <Option name="default" type="invalid"/>
-      <Option name="description" type="QString" value="Node (pgRouting)"/>
-      <Option name="flags" type="int" value="0"/>
+      <Option name="description" value="Node (pgRouting)" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
       <Option name="metadata"/>
-      <Option name="name" type="QString" value="nodepgrouting"/>
-      <Option name="parameter_type" type="QString" value="vector"/>
+      <Option name="name" value="nodepgrouting" type="QString"/>
+      <Option name="parameter_type" value="vector" type="QString"/>
     </Option>
   </Option>
   <Option name="parameters" type="Map">
+    <Option name="kommunegr" type="Map">
+      <Option name="component_description" value="kommunegr" type="QString"/>
+      <Option name="component_pos_x" value="306" type="double"/>
+      <Option name="component_pos_y" value="436" type="double"/>
+      <Option name="name" value="kommunegr" type="QString"/>
+    </Option>
     <Option name="nodepgrouting" type="Map">
-      <Option name="component_description" type="QString" value="nodepgrouting"/>
-      <Option name="component_pos_x" type="double" value="142.11023427866832"/>
-      <Option name="component_pos_y" type="double" value="49.668064118372385"/>
-      <Option name="name" type="QString" value="nodepgrouting"/>
+      <Option name="component_description" value="nodepgrouting" type="QString"/>
+      <Option name="component_pos_x" value="142.11023427866832" type="double"/>
+      <Option name="component_pos_y" value="49.668064118372385" type="double"/>
+      <Option name="name" value="nodepgrouting" type="QString"/>
     </Option>
   </Option>
 </Option>
